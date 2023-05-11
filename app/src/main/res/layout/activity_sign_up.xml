@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.LoginActivity"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="80dp"
+        android:id="@+id/signInHeading"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:textSize="18sp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/signInHeading"
+        android:id="@+id/emailTextView"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_below="@id/emailTextView"
+        android:id="@+id/emailEditText"
+        android:inputType="textEmailAddress"
+        android:hint="@string/your_email_address"
+        android:layout_marginTop="4dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/emailEditText"
+        android:id="@+id/passwordTextView"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordTextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:endIconMode="password_toggle"
+        app:passwordToggleDrawable="@drawable/ic_eye"
+        app:passwordToggleTint="@color/gray"
+        android:layout_below="@id/passwordTextView"
+        android:layout_marginTop="4dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textSize="18sp"
+            android:hint="Password"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/passwordTextInputLayout"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/red"
+        android:layout_marginTop="30dp"
+        android:text="@string/sign_up"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/have_an_account"
+        android:textStyle="bold"
+        android:textColor="@color/gray"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/signUpButton"
+        android:id="@+id/hintTextView"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="70dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_in"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/signUpButton"
+        android:id="@+id/signIpTextView"
+      android:layout_toEndOf="@id/hintTextView"
+        android:layout_marginEnd="10dp"
+        />
+
+<ProgressBar
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@id/hintTextView"
+    android:layout_marginTop="10dp"
+    android:id="@+id/progressBar"
+    android:visibility="gone"/>
+
+</RelativeLayout>

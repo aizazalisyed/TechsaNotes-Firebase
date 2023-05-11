@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TechsaNotes</string>
+    <string name="techsasoft">Techsasoft</string>
+    <string name="email">Email</string>
+    <string name="sign_in">Sign In</string>
+    <string name="your_email_address">Your email address</string>
+    <string name="password">Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="have_an_account">Have an Account?</string>
+    <string name="list">List</string>
+</resources>

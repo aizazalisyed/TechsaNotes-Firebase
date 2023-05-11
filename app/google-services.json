@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "721067143231",
+    "project_id": "techsanotes",
+    "storage_bucket": "techsanotes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:721067143231:android:e4bd372e71af21d1ad488a",
+        "android_client_info": {
+          "package_name": "java.com.techsanotes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "721067143231-jsu54iluds3613o1rfunbnv7ei3g9ial.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPCKqNha42KUCS3C_QELq20gs8cIV6iWA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "721067143231-jsu54iluds3613o1rfunbnv7ei3g9ial.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
